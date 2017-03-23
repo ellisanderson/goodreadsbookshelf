@@ -1,2 +1,94 @@
 @import "partials/_variables.scss";
 @import "partials/_mixins.scss";
+
+body{
+  background-color: $color1;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: .05rem;
+  height:2000px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, {
+  margin:0;
+  padding:0;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+li{
+  list-style-type: none;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+// ------------------HEADER-------------------
+
+header{
+  position: fixed;
+  top:0;
+  width: 100%;
+}
+
+nav{
+  background-color: $color3;
+  color:$color1;
+  padding:20px;
+  overflow: hidden;
+}
+
+.logo{
+  display: inline-block;
+
+  a{
+    text-decoration: none;
+  }
+
+  #large-logo, #small-logo{
+    height:40px;
+  }
+
+  #large-logo{
+    display: none;
+  }
+}
+
+
+.hamburger{
+  float: right;
+}
+
+.dropdown-menu{
+  background-color: $color2;
+  color: $color4;
+  text-align: center;
+  width:200px;
+  float: right;
+
+  li{
+    padding:15px 0;
+    text-transform: uppercase;
+  }
+
+  li:hover{
+    background-color: $color1;
+  }
+}
+
+
+
+
+
+
+
+// ------------------HERO-------------------
+
+.hero{
+  background-color: teal;
+  height: 700px;
+}
