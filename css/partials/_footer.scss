@@ -1,0 +1,27 @@
+footer{
+  background-color: $color4;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding:0 7%;
+  font-size: .7rem;
+  text-align: center;
+  line-height: 1.25rem;
+
+  ul{
+    padding: 15px 0;
+
+    li{
+      display: inline-block;
+      margin:0 5px;
+
+      a:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}

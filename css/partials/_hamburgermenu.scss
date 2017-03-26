@@ -1,0 +1,61 @@
+.hamburger{
+  float: right;
+  background: $color1;
+  color:$color4;
+  border:none;
+}
+
+
+.hamburger-dropdown-menu{
+  display: none;
+  background-color: $color2;
+  color: $color1;
+  text-align: center;
+  width:100%;
+  float: right;
+  box-shadow: $shadow;
+
+  a{
+    display: block;
+    padding:10px 0;
+    // border-bottom: 1px solid $color2;
+  }
+
+  .ham-my-books:hover{
+    // background-color: $color5;
+    color:white;
+  }
+
+  .ham-browse:hover, .ham-community:hover, .ham-account:hover{
+    cursor: pointer;
+    // background-color: $color5;
+    color:white;
+  }
+
+  .mobile-dropdown{
+    display: none;
+
+    a{
+      background-color:$color5;
+      color:$color1;
+    }
+
+    a:hover{
+      background-color: $color4;
+      color:$color1;
+    }
+  }
+}
+
+
+
+
+
+
+// MEDIA QUERIES____________________________________
+
+@media (min-width:767px) {
+  .hamburger{
+    display: none;
+  }
+}

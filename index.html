@@ -4,16 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Template</title>
+    <title>GoodReads Bookshelf</title>
     <script src="https://use.fontawesome.com/d631437608.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
   <header>
+    <!--NAVIGATION----------------------------->
     <nav>
       <div class="logo">
         <a href="#">
@@ -23,9 +26,10 @@
       </div>
 
       <ul class="main-nav">
-        <li>My Books</li>
+        <li><a href="#">My Books</a></li>
         <li>Browse
-          <ul>
+          <ul class="drop">
+            <div class="menu-arrow"></div>
             <li><a href="#">Recommendations</a></li>
             <li><a href="#">Deals</a></li>
             <li><a href="#">Choice Awards</a></li>
@@ -35,12 +39,12 @@
             <li><a href="#">News & Interviews</a></li>
             <li><a href="#">Explore</a></li>
             <li><a href="#">Blog</a></li>
-            <hr>
             <li><a href="#">Listen with Audible</a></li>
           </ul>
         </li>
         <li>Community
-          <ul>
+          <ul class="drop">
+            <div class="menu-arrow"></div>
             <li><a href="#">Groups</a></li>
             <li><a href="#">Discussions</a></li>
             <li><a href="#">Quotes</a></li>
@@ -53,7 +57,67 @@
           </ul>
         </li>
         <li>My Account
-          <ul>
+          <ul class="drop">
+            <div class="menu-arrow"></div>
+            <li><a href="#">View Profile</a></li>
+            <li><a href="#">Friends</a></li>
+            <li><a href="#">My Quotes</a></li>
+            <li><a href="#">My Comments</a></li>
+            <li><a href="#">My Discussions</a></li>
+            <li><a href="#">My Groups</a></li>
+            <li><a href="#">My Reading Challenges</a></li>
+            <li><a href="#">My Favorite Genres</a></li>
+            <li><a href="#">Friends' Recommendations</a></li>
+            <li><a href="#">Account Settings</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Sign Out</a></li>
+          </ul>
+        </li>
+
+        <div class="search-bar">
+          <input type="text" name="" value="" placeholder="Search Books">
+          <button type="button" name="button" id="search"></button>
+        </div>
+
+      </ul>
+
+      <button type="button" name="button" class="hamburger">&#9776;</button>
+
+    </nav>
+
+    <!--HAMBURGER MENU----------------------------->
+    <div class="hamburger-dropdown-menu">
+      <ul>
+        <li class="ham-my-books"><a href="#">My Books</a></li>
+        <li class="ham-browse"><a href="#">Browse</a>
+          <ul class="mobile-dropdown ham-browse-menu">
+            <li><a href="#">Recommendations</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Choice Awards</a></li>
+            <li><a href="#">Giveaways</a></li>
+            <li><a href="#">New Releases</a></li>
+            <li><a href="#">Lists</a></li>
+            <li><a href="#">News & Interviews</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Listen with Audible</a></li>
+          </ul>
+        </li>
+        <li class="ham-community"><a href="#">Community</a>
+          <ul class="mobile-dropdown ham-community-menu">
+            <li><a href="#">Groups</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Quotes</a></li>
+            <li><a href="#">Ask the Author</a></li>
+            <li><a href="#">Trivia</a></li>
+            <li><a href="#">Quizzes</a></li>
+            <li><a href="#">Creative Writing</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Events</a></li>
+          </ul>
+        </li>
+        <li class="ham-account"><a href="#">My Account</a>
+          <ul class="mobile-dropdown ham-account-menu">
             <li><a href="#">View Profile</a></li>
             <li><a href="#">Friends</a></li>
             <li><a href="#">My Quotes</a></li>
@@ -69,54 +133,174 @@
           </ul>
         </li>
       </ul>
-
-      <button type="button" name="button" class="hamburger">&#9776;</button>
-
-    </nav>
-
-    <div class="dropdown-menu">
-      <ul>
-        <a href="#"><li>test link a</li></a>
-        <a href="#"><li>test link b</li></a>
-        <a href="#"><li>test link c</li></a>
-        <a href="#"><li>test link d</li></a>
-        <a href="#"><li>test link e</li></a>
-      </ul>
     </div>
   </header>
 
 
-
-
-
+<!--HERO SLIDER----------------------------->
   <div class="hero">
-    <h1>TEST</h1>
+
+    <div class="slide" id="slide-one">
+      <div class="hero-content">
+        <div class="recommended">Recommended Reading</div>
+        <a href="#"><img src="images/books/kafka.jpg" alt="kafka on the shore book cover"></a>
+        <div class="hero-info">
+          <h2>Kafka on the Shore</h2>
+          <h3>Haruki Murakami</h3>
+          <p class="description">Kafka on the Shore is powered by two remarkable characters: a teenage boy, Kafka Tamura, who runs away from home either to escape a gruesome oedipal prophecy or to search for his long-missing mother and sister; and an aging simpleton called Nakata, who never recovered from a wartime affliction and now is drawn toward Kafka for reasons that, like the most basic activities of daily life, he cannot fathom.
+          <!-- <br>
+          <br> -->
+          As their paths converge, and the reasons for that convergence become clear, Haruki Murakami enfolds readers in a world where cats talk, fish fall from the sky, and spirits slip out of their bodies to make love or commit murder. Kafka on the Shore displays one of the world’s great storytellers at the peak of his powers.</p>
+          <button type="button" name="button">More Details</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="slide-two">
+      <div class="hero-content">
+        <div class="recommended">Recommended Reading</div>
+        <a href="#"><img src="images/books/trial.jpg" alt="the trial book cover"></a>
+        <div class="hero-info">
+          <h2>The Trial</h2>
+          <h3>Franz Kafka</h3>
+          <p class="description">Written in 1914 but not published until 1925, a year after Kafka’s death, <em>The Trial</em> is the terrifying tale of Josef K., a respectable bank officer who is suddenly and inexplicably arrested and must defend himself against a charge about which he can get no information. Whether read as an existential tale, a parable, or a prophecy of the excesses of modern bureaucracy wedded to the madness of totalitarianism, <em>The Trial</em> has resonated with chilling truth for generations of readers.</p>
+          <button type="button" name="button">More Details</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="slide-three">
+      <div class="hero-content">
+        <div class="recommended">Recommended Reading</div>
+        <a href="#"><img src="images/books/nausea.jpg" alt="nausea book cover"></a>
+        <div class="hero-info">
+          <h2>Nausea</h2>
+          <h3>Jean-Paul Sartre</h3>
+          <p class="description">Nausea is the story of Antoine Roquentin, a French writer who is horrified at his own existence. In impressionistic, diary form he ruthlessly catalogues his every feeling and sensation about the world and people around him.
+
+          His thoughts culminate in a pervasive, overpowering feeling of nausea which "spread at the bottom of the viscous puddle, at the bottom of our time, the time of purple suspenders and broken chair seats; it is made of wide, soft instants, spreading at the edge, like an oil stain."
+
+          Roquentin's efforts to come to terms with his life, his philosophical and psychological struggles, give Sartre the opportunity to dramatize the tenets of his Existentialist creed.
+          </p>
+          <button type="button" name="button">More Details</button>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 
-
-
-
+<!--MAIN CONTENT----------------------------->
   <section class="content">
+
+    <div class="bookshelf-heading">
+
+      <div class="my-bookshelf">
+        <h1>My Bookshelf</h1>
+        <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+      </div>
+
+      <div class="sort-by">
+        <p>sort by</p>
+        <select>
+          <option value="" id="sort-all">all</option>
+          <option value="" id="sort-have-read">have read</option>
+          <option value="" id="sort-to-read">to read</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="bookshelf" id="all">
+
+      <div class="book">
+        <a href="#"><img src="images/books/city.jpg" alt="City of Glass book cover"></a>
+        <h2><em>City of Glass</em></h2>
+        <h3>Paul Auster <br> David Mazzuchelli</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/akira.jpg" alt="Akira book cover"></a>
+        <h2><em>Akira</em></h2>
+        <h3>Katsuhiro Otomo</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/comedy.jpg" alt="The Divine Comedy book cover"></a>
+        <h2><em>The Divine Comedy</em></h2>
+        <h3>Danté Alighieri</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/exit.jpg" alt="Last Exit to Brooklyn book cover"></a>
+        <h2><em>Last Exit to Brooklyn</em></h2>
+        <h3>Hubert Selby Jr.</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/heart.jpg" alt="Heart of Darkness book cover"></a>
+        <h2><em>Heart of Darkness</em></h2>
+        <h3>Joseph Conrad</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/junky.jpg" alt="Junky book cover"></a>
+        <h2><em>Junky</em></h2>
+        <h3>William Burroughs</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/newyork.jpg" alt="The New York Trilogy book cover"></a>
+        <h2><em>The New York Trilogy</em></h2>
+        <h3>Paul Auster</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/pheno.jpg" alt="Phenomenology of Perception book cover"></a>
+        <h2><em>Phenomenology of Perception</em></h2>
+        <h3>Maurice Merleau-Ponty</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/stranger.jpg" alt="The Stranger book cover"></a>
+        <h2><em>The Stranger</em></h2>
+        <h3>Albert Camus</h3>
+      </div>
+
+    </div>
 
   </section>
 
 
 
-
-
-
+<!--FOOTER----------------------------->
   <footer>
-
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li>|</li>
+      <li><a href="#">Advertise</a></li>
+      <li>|</li>
+      <li><a href="#">Author Program</a></li>
+      <li>|</li>
+      <li><a href="#">Jobs</a></li>
+      <li>|</li>
+      <li><a href="#">Our Blog</a></li>
+      <li>|</li>
+      <li><a href="#">Author's & Advertiser's Blog</a></li>
+      <li>|</li>
+      <li><a href="#">Terms</a></li>
+      <li>|</li>
+      <li><a href="#">Privacy</a></li>
+      <li>|</li>
+      <li><a href="#">Help</a></li>
+      <li>|</li>
+      <li>©2017</li>
+    </ul>
   </footer>
 
 
-
-
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

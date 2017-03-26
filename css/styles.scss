@@ -1,11 +1,20 @@
 @import "partials/_variables.scss";
 @import "partials/_mixins.scss";
+@import "partials/_dropdownmenu.scss";
+@import "partials/_hamburgermenu.scss";
+@import "partials/_searchbar.scss";
+@import "partials/_hero.scss";
+@import "partials/_footer.scss";
+@import "partials/_content.scss";
+
 
 body{
-  background-color: $color1;
+  background-color: $color6;
   font-family: 'Roboto Condensed', sans-serif;
   letter-spacing: .05rem;
-  height:2000px;
+  font-weight: 100;
+  position: relative;
+  // height:2000px;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, {
@@ -18,7 +27,7 @@ a{
   color:inherit;
 }
 
-li{
+ul, ol, li{
   list-style-type: none;
 }
 
@@ -33,21 +42,22 @@ header{
   position: fixed;
   top:0;
   width: 100%;
+  z-index: 2;
 }
 
 nav{
-  background-color: $color3;
+  background-color: $color4;
   color:$color1;
-  padding:20px;
-  overflow: hidden;
+  padding:0 7%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: $shadow;
 }
 
 .logo{
   display: inline-block;
-
-  a{
-    text-decoration: none;
-  }
 
   #large-logo, #small-logo{
     height:40px;
@@ -59,36 +69,20 @@ nav{
 }
 
 
-.hamburger{
-  float: right;
-}
 
-.dropdown-menu{
-  background-color: $color2;
-  color: $color4;
-  text-align: center;
-  width:200px;
-  float: right;
 
-  li{
-    padding:15px 0;
-    text-transform: uppercase;
+// MEDIA QUERIES________________________________
+
+@media (min-width:1000px) {
+
+  .logo{
+    #small-logo{
+      display: none;
+    }
+
+    #large-logo{
+      display:block;
+      height: 30px;
+    }
   }
-
-  li:hover{
-    background-color: $color1;
-  }
-}
-
-
-
-
-
-
-
-// ------------------HERO-------------------
-
-.hero{
-  background-color: teal;
-  height: 700px;
 }

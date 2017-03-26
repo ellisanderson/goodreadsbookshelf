@@ -1,0 +1,150 @@
+.content{
+  padding: 50px 15% 100px;
+  margin:0 auto;
+  max-width: 1500px;
+
+
+  .bookshelf-heading{
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    .my-bookshelf{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h1{
+        color:$color1;
+        font-weight: lighter;
+        font-size: 1.5rem;
+        display: inline-block;
+      }
+
+      .fa{
+        color:$color1;
+        margin-left: 10px;
+        transition: all 0.1s ease;
+      }
+
+      .fa:hover{
+        transform: $transform1;
+      }
+    }
+
+    .sort-by{
+      margin-top: 10px;
+
+      p{
+        color: $color1;
+        font-weight: 100;
+        display: inline-block;
+        margin-right: 5px;
+      }
+
+      select{
+        display: inline-block;
+        // width: 100px;
+        border: none;
+        padding:7px 14px;
+        font: inherit;
+        outline:none; /* remove focus ring from Webkit */
+        line-height: 1.2;
+        background: white;
+        -webkit-appearance:none; /* remove the strong OSX influence from Webkit */
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .bookshelf{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .book{
+      width: 200px;
+      margin:0 20% 50px;
+      color: $color1;
+      text-align: center;
+
+      img{
+        height: 300px;
+        box-shadow: $shadow2;
+        transition: all ease .2s;
+      }
+
+      img:hover{
+        transform: $transform2;
+      }
+
+      h2{
+        text-align: center;
+        font-weight: 100;
+        margin: 20px 0 10px;
+      }
+
+      h3{
+        text-align: center;
+        font-weight: 100;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+// MEDIA QUERIES_________________________________
+
+@media (min-width:767px) {
+  .content{
+
+    .bookshelf-heading{
+      margin-bottom: 50px;
+      border-bottom: 1px solid white;
+      text-align: left;
+      // display: flex;
+      // align-items: center;
+      // justify-content: space-between;
+
+      .my-bookshelf{
+        float: left;
+      }
+
+      .sort-by{
+        float: right;
+        margin-top: 0;
+      }
+
+    }
+
+    .bookshelf{
+      .book{
+        margin: 0 5% 100px;
+      }
+    }
+  }
+}
+
+
+@media (min-width:1000px) {
+  .content{
+    padding: 50px 7% 100px;
+
+    .bookshelf{
+      .book{
+        margin: 0 4% 100px;
+      }
+    }
+  }
+}
