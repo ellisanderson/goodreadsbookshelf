@@ -23,6 +23,7 @@
           <img src="images/small-logo.png" alt="" id="small-logo">
           <img src="images/large-logo.png" alt="" id="large-logo">
         </a>
+        <h4>A Community<br>For Book Lovers</h4>
       </div>
 
       <ul class="main-nav">
@@ -61,9 +62,6 @@
             <div class="menu-arrow"></div>
             <li><a href="#">View Profile</a></li>
             <li><a href="#">Friends</a></li>
-            <li><a href="#">My Quotes</a></li>
-            <li><a href="#">My Comments</a></li>
-            <li><a href="#">My Discussions</a></li>
             <li><a href="#">My Groups</a></li>
             <li><a href="#">My Reading Challenges</a></li>
             <li><a href="#">My Favorite Genres</a></li>
@@ -120,9 +118,6 @@
           <ul class="mobile-dropdown ham-account-menu">
             <li><a href="#">View Profile</a></li>
             <li><a href="#">Friends</a></li>
-            <li><a href="#">My Quotes</a></li>
-            <li><a href="#">My Comments</a></li>
-            <li><a href="#">My Discussions</a></li>
             <li><a href="#">My Groups</a></li>
             <li><a href="#">My Reading Challenges</a></li>
             <li><a href="#">My Favorite Genres</a></li>
@@ -195,6 +190,10 @@
 
     <div class="bookshelf-heading">
 
+      <div class="tooltip">
+        <p>add a book!</p>
+      </div>
+
       <div class="my-bookshelf">
         <h1>My Bookshelf</h1>
         <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
@@ -202,15 +201,17 @@
 
       <div class="sort-by">
         <p>sort by</p>
-        <select>
-          <option value="" id="sort-all">all</option>
-          <option value="" id="sort-have-read">have read</option>
-          <option value="" id="sort-to-read">to read</option>
+        <select id="changeShelf">
+          <option value="all" id="sort-all">all</option>
+          <option value="haveread" id="sort-have-read">have read</option>
+          <option value="toread" id="sort-to-read">to read</option>
         </select>
       </div>
 
     </div>
 
+
+    <!-- ALL BOOKS----------------------------------------->
     <div class="bookshelf" id="all">
 
       <div class="book">
@@ -265,6 +266,186 @@
         <a href="#"><img src="images/books/stranger.jpg" alt="The Stranger book cover"></a>
         <h2><em>The Stranger</em></h2>
         <h3>Albert Camus</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/1Q84.jpg" alt="1Q84 book cover"></a>
+        <h2><em>1Q84</em></h2>
+        <h3>Haruki Murakami</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/anna.jpg" alt="Anna Karenina book cover"></a>
+        <h2><em>Anna Karenina</em></h2>
+        <h3>Leo Tolstoy</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/hobbit.jpg" alt="The Hobbit book cover"></a>
+        <h2><em>The Hobbit</em></h2>
+        <h3>J. R. R. Tolkien</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/metamorph.jpg" alt="Metamorphasis book cover"></a>
+        <h2><em>Metamorphasis</em></h2>
+        <h3>Franz Kafka</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/hiker.jpg" alt="The Hitchhiker's Guide to the Galaxy book cover"></a>
+        <h2><em>The Hitchhiker's Guide to the Galaxy</em></h2>
+        <h3>Douglas Adams</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/outliers.jpg" alt="Outliers book cover"></a>
+        <h2><em>Outliers</em></h2>
+        <h3>Malcolm Gladwell</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/infinity.jpg" alt="Totality and Infinity book cover"></a>
+        <h2><em>Totality and Infinity</em></h2>
+        <h3>Emmanuel Levinas</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/republic.jpg" alt="The Republic book cover"></a>
+        <h2><em>The Republic</em></h2>
+        <h3>Plato</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/maus.jpg" alt="Maus book cover"></a>
+        <h2><em>Maus</em></h2>
+        <h3>Art Spiegelman</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/tintin1.jpg" alt="Tintin: The Shooting Star book cover"></a>
+        <h2><em>Tintin: The Shooting Star</em></h2>
+        <h3>Herge</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/tintin3.jpg" alt="Tintin: The Black Island book cover"></a>
+        <h2><em>Tintin: The Black Island</em></h2>
+        <h3>Herge</h3>
+      </div>
+
+    </div>
+
+
+    <!-- HAVE READ----------------------------------------->
+    <div class="bookshelf" id="haveread">
+
+      <div class="book">
+        <a href="#"><img src="images/books/hiker.jpg" alt="The Hitchhiker's Guide to the Galaxy book cover"></a>
+        <h2><em>The Hitchhiker's Guide to the Galaxy</em></h2>
+        <h3>Douglas Adams</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/maus.jpg" alt="Maus book cover"></a>
+        <h2><em>Maus</em></h2>
+        <h3>Art Spiegelman</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/tintin1.jpg" alt="Tintin: The Shooting Star book cover"></a>
+        <h2><em>Tintin: The Shooting Star</em></h2>
+        <h3>Herge</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/tintin3.jpg" alt="Tintin: The Black Island book cover"></a>
+        <h2><em>Tintin: The Black Island</em></h2>
+        <h3>Herge</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/city.jpg" alt="City of Glass book cover"></a>
+        <h2><em>City of Glass</em></h2>
+        <h3>Paul Auster <br> David Mazzuchelli</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/akira.jpg" alt="Akira book cover"></a>
+        <h2><em>Akira</em></h2>
+        <h3>Katsuhiro Otomo</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/comedy.jpg" alt="The Divine Comedy book cover"></a>
+        <h2><em>The Divine Comedy</em></h2>
+        <h3>Danté Alighieri</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/exit.jpg" alt="Last Exit to Brooklyn book cover"></a>
+        <h2><em>Last Exit to Brooklyn</em></h2>
+        <h3>Hubert Selby Jr.</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/newyork.jpg" alt="The New York Trilogy book cover"></a>
+        <h2><em>The New York Trilogy</em></h2>
+        <h3>Paul Auster</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/pheno.jpg" alt="Phenomenology of Perception book cover"></a>
+        <h2><em>Phenomenology of Perception</em></h2>
+        <h3>Maurice Merleau-Ponty</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/republic.jpg" alt="The Republic book cover"></a>
+        <h2><em>The Republic</em></h2>
+        <h3>Plato</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/hobbit.jpg" alt="The Hobbit book cover"></a>
+        <h2><em>The Hobbit</em></h2>
+        <h3>J. R. R. Tolkien</h3>
+      </div>
+
+    </div>
+
+
+    <!-- TO READ----------------------------------------->
+    <div class="bookshelf" id="toread">
+
+      <div class="book">
+        <a href="#"><img src="images/books/infinity.jpg" alt="Totality and Infinity book cover"></a>
+        <h2><em>Totality and Infinity</em></h2>
+        <h3>Emmanuel Levinas</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/metamorph.jpg" alt="Metamorphasis book cover"></a>
+        <h2><em>Metamorphasis</em></h2>
+        <h3>Franz Kafka</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/1Q84.jpg" alt="1Q84 book cover"></a>
+        <h2><em>1Q84</em></h2>
+        <h3>Haruki Murakami</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/anna.jpg" alt="Anna Karenina book cover"></a>
+        <h2><em>Anna Karenina</em></h2>
+        <h3>Leo Tolstoy</h3>
+      </div>
+
+      <div class="book">
+        <a href="#"><img src="images/books/heart.jpg" alt="Heart of Darkness book cover"></a>
+        <h2><em>Heart of Darkness</em></h2>
+        <h3>Joseph Conrad</h3>
       </div>
 
     </div>

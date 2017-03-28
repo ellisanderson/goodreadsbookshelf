@@ -54,6 +54,10 @@
   .main-nav {
     width: 600px; }
     .main-nav li {
+      font-size: 1rem; }
+    .main-nav .drop li a {
+      width: 250px;
+      padding: 20px 15px;
       font-size: 1rem; } }
 .hamburger {
   float: right;
@@ -83,7 +87,7 @@
       background-color: #ffcf55;
       color: #3c3831; }
     .hamburger-dropdown-menu .mobile-dropdown a:hover {
-      background-color: #f4f0ea;
+      background-color: #f9dc91;
       color: #3c3831; }
 
 @media (min-width: 767px) {
@@ -181,7 +185,7 @@
       .hero .slide .hero-content img {
         height: 300px;
         margin: 0px auto 20px;
-        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); }
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); }
       .hero .slide .hero-content .hero-info {
         position: relative; }
         .hero .slide .hero-content .hero-info .description {
@@ -196,7 +200,7 @@
           border-radius: 20px; }
         .hero .slide .hero-content .hero-info button:hover {
           cursor: pointer;
-          background-color: rgba(0, 0, 0, 0.3); }
+          background-color: orange; }
   .hero #slide-one {
     background-image: url(../images/pattern4.png);
     background-color: #8dc2b3; }
@@ -257,7 +261,7 @@
     font-size: 1.1rem; }
   .hero .slide .hero-content .hero-info .description {
     font-size: 1rem;
-    line-height: 1.2rem; } }
+    line-height: 1.4rem; } }
 @media (min-width: 1200px) {
   .hero .slick-prev {
     left: 2.5%; }
@@ -294,7 +298,7 @@ footer {
         text-decoration: underline; }
 
 .content {
-  padding: 50px 15% 100px;
+  padding: 0px 15% 100px;
   margin: 0 auto;
   max-width: 1500px; }
   .content .bookshelf-heading {
@@ -302,10 +306,23 @@ footer {
     text-align: center;
     padding-bottom: 20px;
     margin-bottom: 20px; }
+    .content .bookshelf-heading .tooltip {
+      position: relative;
+      left: 55%;
+      background-color: #3c3831;
+      width: 110px;
+      margin-bottom: 10px;
+      border-radius: 15px;
+      text-align: center;
+      opacity: 0; }
+      .content .bookshelf-heading .tooltip p {
+        padding: 7px 5px;
+        color: white; }
     .content .bookshelf-heading .my-bookshelf {
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      position: relative; }
       .content .bookshelf-heading .my-bookshelf h1 {
         color: #3c3831;
         font-weight: lighter;
@@ -375,7 +392,7 @@ footer {
     margin: 0 5% 100px; } }
 @media (min-width: 1000px) {
   .content {
-    padding: 50px 7% 100px; }
+    padding: 0px 7% 100px; }
     .content .bookshelf .book {
       margin: 0 4% 100px; } }
 body {
@@ -416,17 +433,24 @@ nav {
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); }
 
 .logo {
-  display: inline-block; }
+  display: flex;
+  align-items: center; }
   .logo #large-logo, .logo #small-logo {
     height: 40px; }
   .logo #large-logo {
     display: none; }
+  .logo h4 {
+    font-weight: 100;
+    margin-left: 15px;
+    display: none; }
 
 @media (min-width: 1000px) {
-  .logo #small-logo {
-    display: none; }
   .logo #large-logo {
-    display: block;
-    height: 30px; } }
+    display: inline-block;
+    height: 30px;
+    margin: 0 0 5px 10px; } }
+@media (min-width: 1200px) {
+  .logo h4 {
+    display: inline-block; } }
 
 /*# sourceMappingURL=styles.css.map */

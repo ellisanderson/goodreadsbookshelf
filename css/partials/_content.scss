@@ -1,5 +1,5 @@
 .content{
-  padding: 50px 15% 100px;
+  padding: 0px 15% 100px;
   margin:0 auto;
   max-width: 1500px;
 
@@ -10,10 +10,27 @@
     padding-bottom: 20px;
     margin-bottom: 20px;
 
+    .tooltip{
+      position: relative;
+      left:55%;
+      background-color: $color1;
+      width:110px;
+      margin-bottom: 10px;
+      border-radius: 15px;
+      text-align: center;
+      opacity:0;
+
+      p{
+        padding:7px 5px;
+        color:white;
+      }
+    }
+
     .my-bookshelf{
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
 
       h1{
         color:$color1;
@@ -31,6 +48,11 @@
       .fa:hover{
         transform: $transform1;
       }
+
+      // .fa:hover .tooltip{
+      //   opacity: 1;
+      // }
+
     }
 
     .sort-by{
@@ -45,7 +67,6 @@
 
       select{
         display: inline-block;
-        // width: 100px;
         border: none;
         padding:7px 14px;
         font: inherit;
@@ -113,9 +134,6 @@
       margin-bottom: 50px;
       border-bottom: 1px solid white;
       text-align: left;
-      // display: flex;
-      // align-items: center;
-      // justify-content: space-between;
 
       .my-bookshelf{
         float: left;
@@ -139,7 +157,7 @@
 
 @media (min-width:1000px) {
   .content{
-    padding: 50px 7% 100px;
+    padding: 0px 7% 100px;
 
     .bookshelf{
       .book{

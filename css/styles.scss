@@ -57,7 +57,8 @@ nav{
 }
 
 .logo{
-  display: inline-block;
+  display: flex;
+  align-items: center;
 
   #large-logo, #small-logo{
     height:40px;
@@ -66,6 +67,13 @@ nav{
   #large-logo{
     display: none;
   }
+
+  h4{
+    font-weight: 100;
+    margin-left: 15px;
+    display: none;
+  }
+
 }
 
 
@@ -76,13 +84,20 @@ nav{
 @media (min-width:1000px) {
 
   .logo{
-    #small-logo{
-      display: none;
-    }
 
     #large-logo{
-      display:block;
+      display:inline-block;
       height: 30px;
+      margin: 0 0 5px 10px;
+    }
+  }
+}
+
+
+@media (min-width:1200px) {
+  .logo{
+    h4{
+      display: inline-block;
     }
   }
 }

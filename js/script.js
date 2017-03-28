@@ -35,7 +35,7 @@ $(document).ready(function(){
 // SLICK CAROUSEL SLIDER jQuery
 $(document).ready(function(){
   $('.hero').slick({
-    // autoplay:true,
+    autoplay:true,
     autoplaySpeed:10000,
     arrows:true,
     dots:true,
@@ -50,7 +50,19 @@ $(document).ready(function(){
 
 // BOOKSHELF SORTING jQuery
 $(document).ready(function(){
-  $('#sort-have-read').change(function(){
-    $('#all').hide();
-  })
+  $('#haveread, #toread').hide();
+  $('#changeShelf').change(function() {
+      if ($(this).find(':selected').val() === 'toread') {
+          $('div#all, div#haveread').hide();
+          $('div#toread').show();
+
+      } else if ($(this).find(':selected').val() === 'haveread') {
+          $('div#all, div#toread').hide();
+          $('div#haveread').show();
+
+      } else {
+        $('div#haveread, div#toread').hide();
+        $('div#all').show();
+      }
+  });
 });
